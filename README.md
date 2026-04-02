@@ -1,3 +1,7 @@
+![Stars](https://img.shields.io/github/stars/chrisxin327/carbon-tail-risk-modelling)
+![Last Commit](https://img.shields.io/github/last-commit/chrisxin327/carbon-tail-risk-modelling)
+![Repo Size](https://img.shields.io/github/repo-size/chrisxin327/carbon-tail-risk-modelling)
+![Top Language](https://img.shields.io/github/languages/top/chrisxin327/carbon-tail-risk-modelling)
 # Capturing Tail Risks in the Carbon Emission Allowance Returns Using Kernel Density Estimation
 
 ## Description
