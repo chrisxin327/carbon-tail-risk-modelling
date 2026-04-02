@@ -4,9 +4,9 @@
 Traditional risk metrics often struggle with the "heavy tails" of carbon price swings. This project moves beyond standard Gaussian assumptions by applying Kernel Density Estimation (KDE) to Value-at-Risk (VaR) modelling. By analysing different market phases, this tool offers deeper insights into the extreme price risks of European Union Allowances (EUA), helping carbon-exposed industries better prepare for market volatility.
 
 ## Key Features
--	Non-parametric Risk Modelling: Using KDE to relax distributional assumptions, allowing for a more precise capture of heavy-tailed distributions and extreme market shocks.
--	Phase-specific Analysis: Evaluating risk evolution across EU ETS regulatory phases (Phase 2 to Phase 4) to identify how policy shifts and market maturity impact price volatility.
--	Advanced Risk Metrics: Quantifying risk through 95% VaR, Expected Shortfall (ES), and ES-to-VaR ratios, providing deeper insights into the severity of losses beyond the confidence threshold. 
+-	**Non-parametric Risk Modelling**: Using KDE to relax distributional assumptions, allowing for a more precise capture of heavy-tailed distributions and extreme market shocks.
+-	**Phase-specific Analysis**: Evaluating risk evolution across EU ETS regulatory phases (Phase 2 to Phase 4) to identify how policy shifts and market maturity impact price volatility.
+-	**Advanced Risk Metrics**: Quantifying risk through 95% VaR, Expected Shortfall (ES), and ES-to-VaR ratios, providing deeper insights into the severity of losses beyond the confidence threshold. 
 
 ## Data Setup 
 ### Data Overview
