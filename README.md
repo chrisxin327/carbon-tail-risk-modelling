@@ -4,7 +4,7 @@
 ![Top Language](https://img.shields.io/github/languages/top/chrisxin327/carbon-tail-risk-modelling)
 # Capturing Tail Risks in the Carbon Emission Allowance Returns Using Kernel Density Estimation
 
-## Description
+## 💡 Description
 Traditional risk metrics often struggle with the **heavy tails** of carbon price swings. This project moves beyond standard Gaussian assumptions by applying Kernel Density Estimation (KDE) to Value-at-Risk (VaR) modelling. By analysing different market phases, this tool offers deeper insights into the extreme price risks of European Union Allowances (EUA), helping carbon-exposed industries better prepare for market volatility.
 
 ## ⭐️ Key Features
