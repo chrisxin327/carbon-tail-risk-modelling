@@ -35,10 +35,10 @@ Raw daily prices were converted into simple returns to standardise market volati
 
 ## Methodology
 ### KDE Parameter 
-| Parameter | Technical Specification | Statistical Rationale |
-| :--- | :--- | :---|
-| Gaussian Kernel | $$K(u)=\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{u^2}{2}\right)$$| Chosen for its mathematical properties, which simplify bandwidth selection.|
-| Bandwidth Selection | Sheater-Jones Plug-in Method | Minimises the Asymptotic Mean Integrated Squared Error (AMISE) for optimal fit.|
+| Parameters | Statistical Rational |
+| :--- | :--- |
+| Gaussian Kernel | $K(u)=\frac{1}{\sqrt{2\pi}}\exp(-\frac{u^2}{2})$ |
+| Sheater-Jones Plug-in | Find the optimal bandwidth that minimises AMISE. |
 
 
 ### Risk Metrics Calculation
