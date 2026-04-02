@@ -52,6 +52,17 @@ The top 10% of returns were first isolated to reduce the influence of the centra
 The Kupiec test is a backtesting method specifically designed for VaR models. It examines whether the number of observed EUA returns exceeding the VaR is consistent with the number predicted by the model.
 
 # Visualisations
-![KDE Right Tails](figures/kde_right_tails.png)
-![Tail Risk Plots](figures/tail_risk_plots.png)
-![VaR and ES](figures/var_es.png)
+<figure>
+  <img src="figures/kde_right_tails.png" alt="KDE Analysis" width="80%">
+  <figcaption align="center"><b>Figure 1:</b> Kernel Density Estimation with Original Returns.</figcaption>
+</figure>  
+
+<br><figure>
+  <img src="figures/var_es.png" alt="VaR vs. ES" width="80%">
+  <figcaption align="center"><b>Figure 2:</b> 95% Value-at-Risk and Expected Shortfall.</figcaption>
+</figure>
+
+<br><figure>
+  <img src="figures/tail_risk_plots.png" alt="Tail Risk Trend" width="80%">
+  <figcaption align="center"><b>Figure 3:</b> Trends of Risk Metrics over Time.</figcaption>
+</figure>
