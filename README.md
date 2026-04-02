@@ -5,14 +5,17 @@
 # Capturing Tail Risks in the Carbon Emission Allowance Returns Using Kernel Density Estimation
 
 ## Description
-Traditional risk metrics often struggle with the "heavy tails" of carbon price swings. This project moves beyond standard Gaussian assumptions by applying Kernel Density Estimation (KDE) to Value-at-Risk (VaR) modelling. By analysing different market phases, this tool offers deeper insights into the extreme price risks of European Union Allowances (EUA), helping carbon-exposed industries better prepare for market volatility.
+Traditional risk metrics often struggle with the **heavy tails** of carbon price swings. This project moves beyond standard Gaussian assumptions by applying Kernel Density Estimation (KDE) to Value-at-Risk (VaR) modelling. By analysing different market phases, this tool offers deeper insights into the extreme price risks of European Union Allowances (EUA), helping carbon-exposed industries better prepare for market volatility.
 
-## Key Features
--	**Non-parametric Risk Modelling**: Using KDE to relax distributional assumptions, allowing for a more precise capture of heavy-tailed distributions and extreme market shocks.
--	**Phase-specific Analysis**: Evaluating risk evolution across EU ETS regulatory phases (Phase 2 to Phase 4) to identify how policy shifts and market maturity impact price volatility.
--	**Advanced Risk Metrics**: Quantifying risk through 95% VaR, Expected Shortfall (ES), and ES-to-VaR ratios, providing deeper insights into the severity of losses beyond the confidence threshold. 
+## ⭐️ Key Features
+-	**Non-parametric Risk Modelling**:  
+  Using KDE to relax distributional assumptions, allowing for a more precise capture of heavy-tailed distributions and extreme market shocks.
+-	**Phase-specific Analysis**:
+  Evaluating risk evolution across EU ETS regulatory phases (Phase 2 to Phase 4) to identify how policy shifts and market maturity impact price volatility.
+-	**Advanced Risk Metrics**:  
+  Quantifying risk through 95% VaR, Expected Shortfall (ES), and ES-to-VaR ratios, providing deeper insights into the severity of losses beyond the confidence threshold. 
 
-## Data Setup 
+## ⚙️ Data Setup 
 ### Data Overview
 The analysis utilised historical EUA daily price data, characterised by the following:
 -	Source: Bloomberg Terminal (EU ETS Transactions).
@@ -28,16 +31,16 @@ Since the EUA prices are heavily influenced by regulatory shifts rather than sto
 
 >[!Important]
 >-	Price data from Phase 1 (2005 - 2007) was excluded from the analysis due to nascent market demand and low transaction volumes, which do not reflect current market liquidity.
->-	Phase 3 (2013 - 2020) was further divided into Pre-2016 and Post-2016 subphases to account for the introduction of the Market Stability Reserve (MSR) proposal.
+>-	Phase 3 (2013 - 2020) was further divided into Pre-2016 and Post-2016 subphases to account for the introduction of the **Market Stability Reserve (MSR)** proposal.
 
 ### Data Transformation
-Raw daily prices were converted into simple returns to standardise market volatility. In this analysis, positive returns (right-tail risk) were considered as the primary risk factor, reflecting the financial strain that surging EUA prices impose on carbon-intensive industries.
+Raw daily prices were converted into simple returns to standardise market volatility. In this analysis, **positive returns** (right-tail risk) were considered as the primary risk factor, reflecting the financial strain that surging EUA prices impose on carbon-intensive industries.
 
 ### Privacy Disclaimer 
 >[!warning]
 >To comply with Bloomberg’s data licensing and privacy constraints, the raw dataset is not included in this repository. All code and outputs are provided for methodological demonstration purposes only.
 
-## Methodology
+## 📚 Methodology
 ### KDE Parameter 
 | Parameters | Statistical Rationale |
 | :--- | :--- |
@@ -55,7 +58,7 @@ The top 10% of returns were first isolated to reduce the influence of the centra
 ### Backtesting
 The Kupiec test is a backtesting method specifically designed for VaR models. It examines whether the number of observed EUA returns exceeding the VaR is consistent with the number predicted by the model.
 
-# Visualisations & Results
+## 📊 Visualisations & Results
 <figure>
   <img src="figures/kde_right_tails.png" alt="KDE Analysis" width="80%">
   <figcaption align="center"><b>Figure 1:</b> Kernel Density Estimation with Original Returns.</figcaption>
@@ -71,7 +74,7 @@ The Kupiec test is a backtesting method specifically designed for VaR models. It
   <figcaption align="center"><b>Figure 3:</b> Trends of Risk Metrics over Time.</figcaption>
 </figure>
 
-## 🧪 Kupiec's Test Results
+## Kupiec's Test Results
 The following table summarises the reliability of the 95% VaR model across different phases:
 
 | Phase | $N$ | $x$ | $\hat{p}$ | $LR$ | p-value | Pass Test |
@@ -83,7 +86,7 @@ The following table summarises the reliability of the 95% VaR model across diffe
 
 > *Note: All phases pass the Kupiec Test at a 5% significance level (p-value > 0.05).*
 
-## 📉 Tail Risk Summary
+## Tail Risk Summary
 The table below summarizes the extreme risk metrics derived from our KDE-based model:
 | Phase | VaR | ES | ES-to-VaR |
 | :--- | :---: | :---: | :---: |
