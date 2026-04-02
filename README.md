@@ -51,7 +51,7 @@ The top 10% of returns were first isolated to reduce the influence of the centra
 ### Backtesting
 The Kupiec test is a backtesting method specifically designed for VaR models. It examines whether the number of observed EUA returns exceeding the VaR is consistent with the number predicted by the model.
 
-# Visualisations
+# Visualisations & Results
 <figure>
   <img src="figures/kde_right_tails.png" alt="KDE Analysis" width="80%">
   <figcaption align="center"><b>Figure 1:</b> Kernel Density Estimation with Original Returns.</figcaption>
@@ -66,3 +66,25 @@ The Kupiec test is a backtesting method specifically designed for VaR models. It
   <img src="figures/tail_risk_plots.png" alt="Tail Risk Trend" width="80%">
   <figcaption align="center"><b>Figure 3:</b> Trends of Risk Metrics over Time.</figcaption>
 </figure>
+
+## 🧪 Kupiec's Test Results
+The following table summarises the reliability of the 95% VaR model across different phases:
+
+| Phase | $N$ | $x$ | $\hat{p}$ | $LR$ | p-value | Pass Test |
+| :--- | :---: | :---: | :---: | :---:| :---: | :---: |
+| **Phase 2** | 1285 | 60 | 0.0467 | 0.3023 | 0.5824 | **Yes** |
+| **Pre-Phase 3** | 774 | 39 | 0.0504 | 0.0024 | 0.9606 | **Yes** |
+| **Post-Phase 3** | 1287 | 63 | 0.0490 | 0.0300 | 0.8625 | **Yes** |
+| **Phase 4** | 869 | 42 | 0.0483 | 0.0515 | 0.8205 | **Yes** |
+
+> *Note: All phases pass the Kupiec Test at a 5% significance level (p-value > 0.05).*
+
+## 📉 Tail Risk Summary
+The table below summarizes the extreme risk metrics derived from our KDE-based model:
+| Phase | VaR | ES | ES-to-VaR |
+| :--- | :---: | :---: | :---: |
+| **Phase 2** | 0.0406 | 0.0608 | 1.4964 |
+| **Pre-Phase 3** | 0.0553 | 0.0887 | 1.6036 |
+| **Post-Phase 3** | 0.0512 | 0.0707 | 1.3800 |
+| **Phase 4** | 0.0434 | 0.0602 | 1.3863 |
+> **Key Insight**: The tail risk spiked significantly during **Pre-Phase 3**, with the ES-to-VaR ratio reaching **1.60**, indicating a much thicker right tail compared to other periods.
