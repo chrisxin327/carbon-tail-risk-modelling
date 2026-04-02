@@ -50,3 +50,8 @@ The top 10% of returns were first isolated to reduce the influence of the centra
 
 ### Backtesting
 The Kupiec test is a backtesting method specifically designed for VaR models. It examines whether the number of observed EUA returns exceeding the VaR is consistent with the number predicted by the model.
+
+# Visualisations
+![KDE Right Tails](figures/kde_right_tails.png)
+![Tail Risk Plots](figures/tail_risk_plots.png)
+![VaR and ES](figures/var_es.png)
