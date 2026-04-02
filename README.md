@@ -26,10 +26,10 @@ Since the EUA prices are heavily influenced by regulatory shifts rather than sto
 >-	Price data from Phase 1 (2005 - 2007) was excluded from the analysis due to nascent market demand and low transaction volumes, which do not reflect current market liquidity.
 >-	Phase 3 (2013 - 2020) was further divided into Pre-2016 and Post-2016 subphases to account for the introduction of the Market Stability Reserve (MSR) proposal.
 
-## Data Transformation
+### Data Transformation
 Raw daily prices were converted into simple returns to standardise market volatility. In this analysis, positive returns (right-tail risk) were considered as the primary risk factor, reflecting the financial strain that surging EUA prices impose on carbon-intensive industries.
 
-## Privacy Disclaimer 
+### Privacy Disclaimer 
 >[!warning]
 >To comply with Bloomberg’s data licensing and privacy constraints, the raw dataset is not included in this repository. All code and outputs are provided for methodological demonstration purposes only.
 
